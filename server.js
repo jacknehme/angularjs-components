@@ -1,19 +1,20 @@
-const express = require('express');
-const app = express();
-const path = require('path');
+var express = require('express');
+var path = require('path');
+var open = require('open');
 
-<<<<<<< HEAD
-var indexHtml = require('./index.html');
+var port = 3000;
 
-//app.use(express.static('public'));
-
-app.use(express.static(__dirname + indexHtml))
-=======
-
-
+var app = express();
 app.use(express.static('public'));
 
-//app.use(express.static(__dirname + indexHtml))
->>>>>>> master
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname, '/index.html'));
+});
 
-app.listen(3000, () => console.log('Example app listening on port 3000!'))
+app.listen(port, function(err) {
+    if (err) {
+        console.log(err);
+    } else {
+        open('http://localhost:' + port);
+    }
+})
