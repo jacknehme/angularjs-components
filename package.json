@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/jacknehme/angularjs-components#readme",
   "dependencies": {
+    "express": "^4.16.2",
+    "npm": "^5.7.1",
     "open": "0.0.5"
   },
   "devDependencies": {

@@ -1,7 +1,13 @@
 (function() {
     "use strict";
 
-    var module = angular.module("jnMovies");
+    angular
+        .module("jnMovies")
+        .component("movieList", {
+            templateUrl: "/js/jn-movies/movie-list.component.html",
+            controllerAs: "model",
+            controller: ['$http', controller]
+        });
 
     function fetchMovies($http) {
         return $http.get("/json/movie.json")
@@ -32,10 +38,4 @@
             }
         };
     }
-
-    module.component("movieList", {
-        templateUrl: "/js/jn-movies/movie-list.component.html",
-        controllerAs: "model",
-        controller: ['$http', controller]
-    });
 })();
