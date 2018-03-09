@@ -3,19 +3,39 @@
 
     var module = angular.module("jnMovies");
 
-    module.component("movieList", {
-        templateUrl: "/jn-movies/movie-list.component.html",
-        controllerAs: "model",
-        controller: function() {
-            var model = this;
+    function fetchMovies($http) {
+        return $http.get("/json/movie.json")
+            .then(function(response) {
+                return response.data;
+            });
+    }
 
-            model.message = "Hello from a component controller!";
+    function controller($http) {
+        var model = this;
+        model.movies = [];
 
-            model.changeMessage = function() {
-                model.message = "New message";
+        model.$onInit = function() {
+            fetchMovies($http).then(function(movies) {
+                model.movies = movies;
+            })
+        };
+
+        model.upRating = function(movie) {
+            if (movie.rating < 5) {
+                movie.rating += 1;
             }
-        },
+        };
 
+        model.downRating = function(movie) {
+            if (movie.rating > 1) {
+                movie.rating -= 1;
+            }
+        };
+    }
+
+    module.component("movieList", {
+        templateUrl: "/js/jn-movies/movie-list.component.html",
+        controllerAs: "model",
+        controller: ['$http', controller]
     });
-
 })();
