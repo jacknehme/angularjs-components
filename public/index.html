@@ -7,22 +7,20 @@
 </head>
 
 <body ng-cloak>
-    <nav class="navbar navbar-default navbar-inverse" class="container-fluid">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a href="#" class="navbar-brand">At The Movies</a>
-            </div>
-        </div>
-    </nav>
 
-    <div class="container">
-        <movie-list></movie-list>
-    </div>
+    <movie-app></movie-app>
+
+
 
     <script type="module" src="/js/angular/angular.js"></script>
+    <script type="module" src="/js/@angular/router/angular1/angular_1_router.js"></script>
+    <!-- <script type="module" src="/js/angular-route/angular-route.js"></script> -->
     <script type="module" src="/js/jn-movies/module.js"></script>
     <script type="module" src="/js/jn-movies/movie-list.component.js"></script>
     <script type="module" src="/js/jn-movies/movie-rating.component.js"></script>
+    <script type="module" src="/js/jn-movies/movie-app.component.js"></script>
+    <script type="module" src="/js/jn-movies/movie-details.component.js"></script>
+
 </body>
 
 </html>

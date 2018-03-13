@@ -6,7 +6,10 @@
         .component("movieList", {
             templateUrl: "/js/jn-movies/movie-list.component.html",
             controllerAs: "model",
-            controller: ['$http', controller]
+            controller: ['$http', controller],
+            bindings: {
+                "$router": "<",
+            }
         });
 
     function fetchMovies($http) {
@@ -24,6 +27,10 @@
             fetchMovies($http).then(function(movies) {
                 model.movies = movies;
             })
+        };
+
+        model.goTo = function(id) {
+            model.$router.navigate(['Details', { id: id }]);
         };
 
         model.upRating = function(movie) {
