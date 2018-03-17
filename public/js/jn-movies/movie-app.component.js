@@ -13,7 +13,7 @@
                 component: "appAbout",
                 name: "About"
             }, {
-                path: "/detail/:id",
+                path: "/detail/:id/...", // ... for parent of nested component
                 component: "movieDetails",
                 name: "Details"
             }, {

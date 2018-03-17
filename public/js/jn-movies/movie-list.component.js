@@ -30,7 +30,11 @@
         };
 
         model.goTo = function(id) {
-            model.$router.navigate(['Details', { id: id }]);
+            model.$router.navigate(['Details', { id: id }, 'Overview']);
+        };
+
+        model.setRating = function(movie, newRating) {
+            movie.rating = newRating;
         };
 
         model.upRating = function(movie) {

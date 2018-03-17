@@ -9,6 +9,11 @@
             //         return true;
             //     }, 2000);
             // },
+            $routeConfig: [
+                { path: "/overview", component: "movieOverview", name: "Overview" },
+                { path: "/cast", component: "movieCast", name: "Cast" },
+                { path: "/director", component: "movieDirector", name: "Director" },
+            ],
             controllerAs: "model",
             controller: function() {
                 var model = this;
