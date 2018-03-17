@@ -1,7 +1,7 @@
 (function() {
     "use strict";
 
-    var module = angular.module('jnMovies', ['ngComponentRouter']);
+    var module = angular.module('jnMovies', ['ngComponentRouter', 'ngAnimate']);
 
     module.value("$routerRootComponent", "movieApp");
 

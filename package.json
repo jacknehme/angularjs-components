@@ -17,6 +17,8 @@
   "dependencies": {
     "@angular/router": "0.2.0",
     "angular": "1.6.x",
+    "angular-animate": "^1.6.9",
+    "animate.css": "^3.6.1",
     "express": "^4.16.2",
     "npm": "^5.7.1",
     "open": "0.0.5"
