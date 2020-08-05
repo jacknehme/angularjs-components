@@ -16,7 +16,7 @@
   "homepage": "https://github.com/jacknehme/angularjs-components#readme",
   "dependencies": {
     "@angular/router": "0.2.0",
-    "angular": "1.6.x",
+    "angular": "1.8.x",
     "angular-animate": "^1.6.9",
     "animate.css": "^3.6.1",
     "express": "^4.16.2",
