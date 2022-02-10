@@ -52,9 +52,17 @@ ajv@^5.1.0:
     fast-json-stable-stringify "^2.0.0"
     json-schema-traverse "^0.3.0"
 
+angular-animate@^1.6.9:
+  version "1.8.2"
+  resolved "https://registry.yarnpkg.com/angular-animate/-/angular-animate-1.8.2.tgz#a3045e523ffb8d7fcbebd3cb68d1fdd474665ced"
+
 angular@1.6.x:
   version "1.6.9"
   resolved "https://registry.yarnpkg.com/angular/-/angular-1.6.9.tgz#bc812932e18909038412d594a5990f4bb66c0619"
+
+animate.css@^3.6.1:
+  version "3.7.2"
+  resolved "https://registry.yarnpkg.com/animate.css/-/animate.css-3.7.2.tgz#e73e0d50e92cb1cfef1597d9b38a9481020e08ea"
 
 ansi-align@^2.0.0:
   version "2.0.0"
@@ -3285,10 +3293,8 @@ umask@^1.1.0, umask@~1.1.0:
   resolved "https://registry.yarnpkg.com/umask/-/umask-1.1.0.tgz#f29cebf01df517912bb58ff9c4e50fde8e33320d"
 
 undefsafe@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/undefsafe/-/undefsafe-2.0.2.tgz#225f6b9e0337663e0d8e7cfd686fc2836ccace76"
-  dependencies:
-    debug "^2.2.0"
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/undefsafe/-/undefsafe-2.0.5.tgz#38733b9327bdcd226db889fb723a6efd162e6e2c"
 
 union-value@^1.0.0:
   version "1.0.0"
