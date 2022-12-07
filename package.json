@@ -19,7 +19,7 @@
     "angular": "1.6.x",
     "angular-animate": "^1.6.9",
     "animate.css": "^3.6.1",
-    "express": "^4.16.2",
+    "express": "^4.17.3",
     "npm": "^5.7.1",
     "open": "0.0.5"
   },
